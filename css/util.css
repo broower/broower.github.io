@@ -3376,12 +3376,20 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 /*[ L-Text 31 - 50 ]
 ///////////////////////////////////////////////////////////
 */
+
+.font-100px {
+    font-size: 100px!important;
+}
+
+.font-Claiborne {
+    font-family: Claiborne!important;
+}
+
 .l-text1 {
 	font-family: Montserrat-Bold;
 	font-size: 50px;
 	color: white;
 	line-height: 1.2;
-	text-transform: uppercase;
 	letter-spacing: 3px;
 }
 
@@ -3406,12 +3414,11 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 }
 
 .xl-text2 {
-	font-family: Claibrone;
-	font-size: 80px;
+	font-family: Claiborne;
+	font-size: 100px;
 	color: white;
 	line-height: 1.2;
 	letter-spacing: 4px;
-	text-transform: uppercase;
 }
 
 .xl-text3 {
@@ -3816,7 +3823,7 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 }
 
 .bo14 {
-	border-bottom: 5px solid #fff;
+	border-bottom: 2px solid #fff;
 }
 
 .bo15 {
