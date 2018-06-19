@@ -80,6 +80,11 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   src: url('../fonts/poppins/Poppins-Black.ttf'); 
 }
 
+@font-face {
+  font-family: Claibrone;
+  src: url('../fonts/montserrat/Claibrone.ttf'); 
+}
+
 /*[ RESTYLE TAG ]
 ///////////////////////////////////////////////////////////
 */
@@ -122,6 +127,10 @@ a:hover {
 h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
 	font-family: Montserrat-Regular;
+}
+
+.claiborne-font {
+	font-family: Claiborne;
 }
 
 .hover:hover {
