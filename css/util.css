@@ -246,6 +246,7 @@
 .p-t-38 {padding-top: 38px;}
 .p-t-39 {padding-top: 39px;}
 .p-t-40 {padding-top: 40px;}
+.p-t-180 {padding-top: 180px;}
 .p-t-41 {padding-top: 41px;}
 .p-t-42 {padding-top: 42px;}
 .p-t-43 {padding-top: 43px;}
@@ -3582,6 +3583,11 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 
 .size24 {
 	max-width: 1070px;
+	height: 100%;
+}
+
+.size30 {
+	max-width: 1300px;
 	height: 100%;
 }
 

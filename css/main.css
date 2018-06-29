@@ -886,6 +886,16 @@ li.sale-noti > a {
   margin-right: 20px;
 }
 
+.header-cart-item-img-without-cross {
+  width: 80px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.header-cart-item-img-without-cross img {
+  width: 100%;
+}
+
 .header-cart-item-img img {
   width: 100%;
 }
