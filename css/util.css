@@ -3233,7 +3233,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 .m-text8 {
 	font-family: Montserrat-Regular;
 	font-size: 16px;
-	color: #e65540;
+	color: #4166fc;
 	text-transform: uppercase;
 }
 
@@ -3436,7 +3436,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 ///////////////////////////////////////////////////////////
 */
 .colorwhite {color: #fff;}
-.color0 {color: #e65540;}
+.color0 {color: #4166fc;}
 .color1 {color: #888888;}
 .color2 {color: #333333;}
 
@@ -3444,7 +3444,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 /*[  ]
 -----------------------------------------------------------
 */
-.color0-hov:hover {color: #e65540;}
+.color0-hov:hover {color: #4166fc;}
 
 
 
@@ -3740,7 +3740,7 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 /*[  ]
 -----------------------------------------------------------
 */
-.bg0-hov:hover {background-color: #e65540;}
+.bg0-hov:hover {background-color: #4166fc;}
 
 
 
@@ -3849,8 +3849,8 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 .bo-rad-9 {border-radius: 9px;}
 .bo-rad-10 {border-radius: 10px;}
 .bo-rad-15 {border-radius: 15px;}
-.bo-rad-20 {border-radius: 20px;}
-.bo-rad-23 {border-radius: 23px;}
+.bo-rad-20 {border-radius: 3px;}
+.bo-rad-23 {border-radius: 3px;}
 
 .bo-t-rad-2 {
 	border-top-left-radius: 2px;
@@ -3882,7 +3882,7 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 	position: absolute;
 	width: 0;
 	height: 1px;
-	background-color: #e65540;
+	background-color: #4166fc;
 	left: 0;
 	bottom: -1px;
 	-webkit-transition: all 0.3s;
@@ -3899,7 +3899,7 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 -----------------------------------------------------------
 */
 .eff2:active {
-	background-color: #e65540;
+	background-color: #4166fc;
 	color: white;
 }
 
