@@ -105,6 +105,12 @@ html {
 
 /* ------------------------------------ */
 
+.image_picker_image {
+    max-width: 140px;
+    max-height: 100px;
+    background-color: #FF0000;
+}
+
 a {
     font-family: Montserrat-Regular;
     font-weight: 400;

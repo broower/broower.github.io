@@ -30,8 +30,9 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-<!--
-    <link rel="stylesheet" type="text/css" href="css/ali1.css">
+
+    <link rel="stylesheet" type="text/css" href="css/image-picker.css">
+    <!--
     <link rel="stylesheet" type="text/css" href="css/ali2.css">
     <link rel="stylesheet" type="text/css" href="css/ali3.css">
     <link rel="stylesheet" type="text/css" href="css/ali4.css">
@@ -461,6 +462,13 @@
                 <p class="s-text8 p-t-10">
                     Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
                 </p>
+
+                <select class="image-picker" style="height: 0px; width: 0px;" single>
+                    <option data-img-src="images/materials/leather-gold.jpg" value="1">Золотой</option>
+                    <option data-img-src="images/materials/leather-gray.jpg" value="2">Темно-серый</option>
+                    <option data-img-src="images/materials/leather-gray2.jpg" value="3">Светло-серый</option>
+                    <option data-img-src="images/materials/leather-red.jpg" value="4">Красный</option>
+                </select>
 
                 <!--  -->
                 <div class="rs2-select2 bo4 of-hidden w-size12 m-t-5 m-b-5 m-r-10" style="width: 162px; margin-top: 10px!important">
@@ -1245,6 +1253,31 @@
     <div id="dropDownSelect2"></div>
 
 
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/image-picker.js"></script>
+    <script>
+        $(".image-picker").imagepicker({
+            hide_select: false
+        })
+
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
 
     <!--===============================================================================================-->
     <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
