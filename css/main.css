@@ -2304,6 +2304,11 @@ li.sale-noti > a {
     position: relative;
 }
 
+.cart-img-product-without-cross {
+    width: 90px;
+    position: relative;
+}
+
 .cart-img-product img {
     width: 100%;
 }
