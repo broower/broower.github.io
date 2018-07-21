@@ -1,3 +1,16 @@
+<?php
+	ini_set('error_reporting', E_ALL);
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	
+	session_start();
+	
+	if (isset($_GET['exit'])) {
+		unset($_SESSION['id']);
+	}
+	
+require_once("php/model/MyDatabase.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,52 +107,60 @@
                 <div class="topbar-child2">
                     <!--  -->
                     <div class="header-wrapicon2 m-r-13">
+						
                         <img src="images/icons/icon-header-01.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
 
                         <!-- Header cart noti -->
                         <div class="header-cart header-dropdown">
+							<? if (isset($_SESSION['id'])): ?>
+							<?
+								$myDB = new MyDatabase();
+								$info_user = $myDB->getField($_SESSION['id']); 
+							?>
                             <ul class="header-cart-wrapitem">
                                 <li class="header-cart-item">
                                     <div class="header-cart-item-img-without-cross">
-                                        <img src="images/item-cart-01.jpg" alt="IMG">
+                                        <img src="<?=$info_user['photo'];?>" alt="IMG">
                                     </div>
 
                                     <div class="header-cart-item-txt">
                                         <h6>
-                                            thecriser
+                                            <?=$info_user['name'];?>
                                         </h6>
 
                                         <span class="header-cart-item-info">
-											Захаренко Максим Вячеславович
+											<?=$info_user['country'];?> <?=$info_user['city'];?>
 										</span>
                                     </div>
                                 </li>
                             </ul>
 
                             <div class="block2-txt p-t-10">
-                                <a href="#" class="block2-name dis-block s-text3 p-b-5">
-                            Редактировать профиль
-				        </a>
+                                <a href="#" class="block2-name dis-block s-text3 p-b-5">Редактировать профиль</a>
                             </div>
+							<? endif; ?>
                             <div class="header-cart-buttons  p-t-10">
+								<? if (isset($_SESSION['id'])): ?>
                                 <div class="header-cart-wrapbtn">
                                     <!-- Button -->
-                                    <a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+                                    <a href="?exit" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 										Выйти
 									</a>
                                 </div>
+								<? else: ?>
                                 <div class="header-cart-wrapbtn p-t-10">
                                     <!-- Button -->
-                                    <a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+                                    <a href="auth.php" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 										Войти
 									</a>
                                 </div>
                                 <div class="header-cart-wrapbtn p-t-10">
                                     <!-- Button -->
-                                    <a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+                                    <a href="reg.php" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 										Регистрация
 									</a>
                                 </div>
+								<? endif; ?>
                             </div>
                         </div>
                     </div>
@@ -311,13 +332,13 @@
                                 </div>
                                 <div class="header-cart-wrapbtn p-t-10">
                                     <!-- Button -->
-                                    <a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+                                    <a href="auth.php" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 										Войти
 									</a>
                                 </div>
                                 <div class="header-cart-wrapbtn p-t-10">
                                     <!-- Button -->
-                                    <a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+                                    <a href="reg.php" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 										Регистрация
 									</a>
                                 </div>
