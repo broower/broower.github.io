@@ -2496,6 +2496,7 @@ body:after,
 }
 
 .story-area .story-box {
+    width: 100%;
     padding: 60px 90px;
     background: #fff;
     border-radius: 3px;
