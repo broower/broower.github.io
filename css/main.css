@@ -2851,21 +2851,14 @@ footer .copy-right-text a {
 
 .switch-wrap p {
     margin: 0;
-
-
-
-
-
-
 }
-
 
 .cd-top {
     display: inline-block;
     height: 40px;
     width: 40px;
     position: fixed;
-    bottom: 40px;
+    bottom: 10px !important;
     left: 10px;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
