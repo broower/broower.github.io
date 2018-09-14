@@ -916,6 +916,10 @@ h6 {
     background: #fff;
 }
 
+.padding-30 {
+    padding: 30px;
+}
+
 .genric-btn.default-border:hover {
     color: #222222;
     background: #f9f9ff;
@@ -926,6 +930,26 @@ h6 {
     color: #fff;
     background: #9820ec;
     border: 1px solid transparent;
+}
+
+.genric-btn.price {
+    width: 100%;
+    color: #fff;
+    background: #38a4ff;
+    border: 5px solid transparent;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.div-order {
+    width: 100%;
+    text-align: center;
 }
 
 .genric-btn.primary:hover {
