@@ -89,7 +89,7 @@
                         <h1 class="text-white text-uppercase">ВЕСЕННЯЯ АКЦИЯ</h1>
                         <h3 class="text-white text-uppercase">Только этой весной - СКИДКА 30%</h3>
                         <p class="text-white">Закажи мешок до 31.01.2018 и получи скидку 20% на следующий заказ.<br>А при покупке двух мешков - получи скидку 30%</p>
-                        <a href="#" class="genric-btn info circle arrow">Оформить заказ<span class="lnr lnr-arrow-right"></span></a> </div>
+                        <a href="#" class="genric-btn info circle arrow" data-toggle="modal" data-target="#makeOrder">Оформить заказ<span class="lnr lnr-arrow-right"></span></a> </div>
                 </div>
             </div>
             <div class="item d-flex align-items-center">
@@ -107,7 +107,7 @@
                         <h1 class="text-white text-uppercase">АКЦИЯ</h1>
                         <h3 class="text-white text-uppercase">Весенняя распродажа</h3>
                         <p class="text-white">Только этой осенью при заказе любого мешка получи скидку 25%</p>
-                        <a href="#" class="genric-btn info circle arrow">Оформить заказ<span class="lnr lnr-arrow-right"></span></a> </div>
+                        <a href="#" class="genric-btn info circle arrow" data-toggle="modal" data-target="#makeOrder">Оформить заказ<span class="lnr lnr-arrow-right"></span></a> </div>
                 </div>
             </div>
         </div>
@@ -341,7 +341,7 @@
                             <h6 class="text-uppercase" style="text-align: center">Оформить заказ</h6>
                             <p style="text-align: center">С помощью оформления заказа Вы можете создать свой собственный мешок любого размера и расцветки.<br>Срок изготовления мешка до четырех дней.</p>
                             <div class="div-order">
-                                <a href="#" class="genric-btn info circle arrow">Оформить заказ<span class="lnr lnr-arrow-right"></span></a>
+                                <a href="#" class="genric-btn info circle arrow" data-toggle="modal" data-target="#makeOrder">Оформить заказ<span class="lnr lnr-arrow-right"></span></a>
                             </div>
                         </div>
                     </div>
@@ -629,7 +629,116 @@
                 </div>
                 <div class="modal-footer">
                     <a href="#" class="genric-btn default circle close" data-dismiss="modal">Закрыть</a>
-                    <a href="#" class="genric-btn info circle arrow">Отправить заявку<span class="lnr lnr-arrow-right"></span></a> </div>
+                    <a href="#" class="genric-btn info circle arrow">Отправить<span class="lnr lnr-arrow-right"></span></a> </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal "оформить заказ" makeOrder -->
+    <div id="makeOrder" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="title text-uppercase">Оформить заказ</h6>
+                </div>
+                <div class="modal-body">
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите имя" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите имя'" required="" class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите мобильный телефон" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите мобильный телефон'" required="" class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите e-mail'" required="" class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите адрес доставки" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите адрес доставки'" required="" class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите почтовый индекс" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите почтовый индекс'" required="" class="single-input">
+                    </div>
+
+                    <h5 class="title text-uppercase" style="margin-top: 30px; text-align: center">Форма мешка</h5>
+
+                    <div class="row" style="margin-top: 30px">
+                        <div class="col-md-4">
+                            <div class="">
+                                <a style="width: 100%" class="genric-btn primary-border e-large">Груша</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="">
+                                <a style="width: 100%" class="genric-btn primary-border e-large">Шар</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="">
+                                <a style="width: 100%" class="genric-btn primary-border e-large">Треугольник</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h5 class="title text-uppercase" style="margin-top: 30px; text-align: center">Размер</h5>
+
+                    <div class="row" style="margin-top: 30px">
+                        <div class="col-md-4">
+                            <div class="">
+                                <a style="width: 100%" class="genric-btn primary-border e-large">L [90x110см]</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="">
+                                <a style="width: 100%" class="genric-btn primary-border e-large">XL [90x120см]</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="">
+                                <a style="width: 100%" class="genric-btn primary-border e-large">XXL [90x135см]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <div class="col-lg-4 col-md-6 mt-sm-30">
+                            <div class="single-element-widget">
+                                <div class="switch-wrap d-flex justify-content-between">
+                                    <p style="padding-left: 5px">Комплектация со внешними чехлами</p>
+                                    <div class="primary-switch">
+                                        <input type="checkbox" id="primary-switch" checked="">
+                                        <label for="primary-switch"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="title text-uppercase" style="margin-top: 30px; text-align: center">Материал</h5>
+
+                    <div class="row" style="margin-top: 30px">
+                        <div class="col-md-6">
+                            <div class="">
+                                <a style="width: 100%" class="genric-btn primary-border e-large">Оксфорд</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="">
+                                <a style="width: 100%" class="genric-btn primary-border e-large">Экокожа</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="text-align: center; margin-top: 30px;">Каталог доступных цветов утоячняется у оператора после отправки заявки на аренду.<br>Наш оператор свяжется с Вами в ближайшее время.</p>
+                    <h4 class="title text-uppercase" style="padding-left: 20px; margin-top: 20px; margin-bottom: 10px; text-align: center">ИТОГО: 35 BYN</h4>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="genric-btn default circle close" data-dismiss="modal">Закрыть</a>
+                    <a href="#" class="genric-btn info circle arrow">Отправить<span class="lnr lnr-arrow-right"></span></a> </div>
             </div>
 
         </div>
