@@ -1221,6 +1221,10 @@ h6 {
     height: 14px;
 }
 
+.min-height-120 {
+    min-height: 130px;
+}
+
 .unordered-list li {
     position: relative;
     padding-left: 30px;
