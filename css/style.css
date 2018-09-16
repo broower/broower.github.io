@@ -15,7 +15,6 @@ ul.list li:last-child {
 
 ul.list li:before {
     font-family: "Ionicons";
-    content: '\f374';
     position: absolute;
     left: 0;
     color: #4b9bc8;

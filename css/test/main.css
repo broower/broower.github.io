@@ -1,0 +1,20 @@
+.image_picker_image {
+    max-width: 140px;
+    max-height: 200px;
+    background-color: #FF0000;
+}
+
+input {
+    outline: none;
+    border: none !important;
+}
+
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}

@@ -17,10 +17,13 @@
     <!-- Site Title -->
     <title>Broower Shop | Продажа и аренда бескаркасной мебели</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
-    <!--
-		CSS
-		============================================= -->
+    <!--    ===     -->
+
+    <link rel="stylesheet" href="css/test/image-picker.css">
+    <link rel="stylesheet" href="css/test/main.css">
+    <link rel="stylesheet" href="css/test/util.min.css">
+
+    <!--    ===     -->
 
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/linearicons.css">
@@ -523,13 +526,13 @@
         </header>
     </div>
 
-    <a href="#" id="popup__toggle" onclick="return false;">
+    <a href="#" id="popup__toggle" onclick="return false;" style="z-index: 999999">
         <div style="transform-origin: center;">
             <h3 class="genric-btn primary e-large radius" data-toggle="modal" data-target="#callOrder">Заказать звонок</h3>
         </div>
     </a>
 
-    <a href="#0" class="cd-top js-cd-top">Top</a>
+    <a href="#0" class="cd-top js-cd-top" style="z-index: 999998">Top</a>
 
     <script src="js/scroll_to_top.js"></script>
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
@@ -593,17 +596,6 @@
                     </div>
 
                     <div class="mt-10">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp">
-                                <input type="text" name="first_name" placeholder="Введите количество мешков" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите количество мешков'" required="" class="single-input">
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp">
-                                <input type="text" name="first_name" placeholder="Введите количество дней аренды" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите количество дней аренды'" required="" class="single-input">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-10">
                         <div class="col-lg-4 col-md-6 mt-sm-30">
                             <div class="single-element-widget">
                                 <div class="switch-wrap d-flex justify-content-between">
@@ -624,6 +616,49 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="mt-10">
+                        <div class="row" style="margin-top: 30px">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <h6 style="text-align: center; margin-bottom: 15px">УКАЖИТЕ КОЛИЧЕСТВО МЕШКОВ</h6>
+                                    <div class="flex-m flex-w p-t-10" style="padding-top: 5px!important">
+                                        <div class="flex-w bo5 of-hidden m-b-10">
+                                            <button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+								</button>
+
+                                            <input class="size8 m-text18 t-center num-product" type="number" name="num-product" value="1" style="width: 74px">
+
+                                            <button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+								</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="">
+                                    <h6 style="text-align: center; margin-bottom: 15px">УКАЖИТЕ КОЛИЧЕСТВО ДНЕЙ АРЕНДЫ</h6>
+                                    <div class="flex-m flex-w p-t-10" style="padding-top: 5px!important">
+                                        <div class="flex-w bo5 of-hidden m-b-10">
+                                            <button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+								</button>
+
+                                            <input class="size8 m-text18 t-center num-product" type="number" name="num-product" value="1" style="width: 74px">
+
+                                            <button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+								</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <p style="text-align: center; margin-top: 30px;">Каталог доступных цветов утоячняется у оператора после отправки заявки на аренду.<br>Наш оператор свяжется с Вами в ближайшее время.</p>
                     <h4 class="title text-uppercase" style="padding-left: 20px; margin-top: 20px; margin-bottom: 10px; text-align: center">ИТОГО: 35 BYN</h4>
                 </div>
@@ -661,59 +696,81 @@
                         <input type="text" name="first_name" placeholder="Введите почтовый индекс" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите почтовый индекс'" required="" class="single-input">
                     </div>
 
-                    <h5 class="title text-uppercase" style="margin-top: 30px; text-align: center">Форма мешка</h5>
-
-                    <div class="row" style="margin-top: 30px">
-                        <div class="col-md-4">
-                            <div class="">
-                                <a style="width: 100%" class="genric-btn primary-border e-large">Груша</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="">
-                                <a style="width: 100%" class="genric-btn primary-border e-large">Шар</a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="">
-                                <a style="width: 100%" class="genric-btn primary-border e-large">Треугольник</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <h5 class="title text-uppercase" style="margin-top: 30px; text-align: center">Размер</h5>
-
-                    <div class="row" style="margin-top: 30px">
-                        <div class="col-md-4">
-                            <div class="">
-                                <a style="width: 100%" class="genric-btn primary-border e-large">L [90x110см]</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="">
-                                <a style="width: 100%" class="genric-btn primary-border e-large">XL [90x120см]</a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="">
-                                <a style="width: 100%" class="genric-btn primary-border e-large">XXL [90x135см]</a>
+                    <div class="mt-10">
+                        <div class="input-group-icon mt-10">
+                            <div class="icon"><i class="fa fa-sort" aria-hidden="true"></i></div>
+                            <div class="form-select">
+                                <select style="display: none;">
+												<option value="1">Размер мешка</option>
+												<option value="1">Маленький - L [90x110см]</option>
+												<option value="1">Стандарт - XL [90x120см]</option>
+												<option value="1">Большой - XXL [90x135см]</option>
+											</select>
                             </div>
                         </div>
                     </div>
 
                     <div class="mt-10">
-                        <div class="col-lg-4 col-md-6 mt-sm-30">
-                            <div class="single-element-widget">
-                                <div class="switch-wrap d-flex justify-content-between">
-                                    <p style="padding-left: 5px">Комплектация со внешними чехлами</p>
-                                    <div class="primary-switch">
-                                        <input type="checkbox" id="primary-switch" checked="">
-                                        <label for="primary-switch"></label>
-                                    </div>
-                                </div>
+                        <div class="input-group-icon mt-10">
+                            <div class="icon"><i class="fa fa-sort" aria-hidden="true"></i></div>
+                            <div class="form-select">
+                                <select style="display: none;">
+												<option value="1">Комплектация</option>
+												<option value="1">Внутренний и внешний чехол</option>
+												<option value="1">Без внешнего чехла</option>
+											</select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <div class="input-group-icon mt-10">
+                            <div class="icon"><i class="fa fa-sort" aria-hidden="true"></i></div>
+                            <div class="form-select">
+                                <select style="display: none;">
+												<option value="1">Материал</option>
+												<option value="1">Оксфорд</option>
+												<option value="1">Экокожа</option>
+											</select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 30px">
+                        <div class="col-md-3">
+                            <div class="">
+                                <h5 class="title text-uppercase" style="margin-top: 30px; text-align: center">Форма мешка: </h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="">
+                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Груша</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="">
+                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Шар</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="">
+                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Треугольник</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="title text-uppercase" style="margin-top: 30px; text-align: center">Комплектация</h5>
+
+                    <div class="row" style="margin-top: 30px">
+                        <div class="col-md-6">
+                            <div class="">
+                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Со внешних чехлом</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="">
+                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Без внешнего чехла</a>
                             </div>
                         </div>
                     </div>
@@ -723,16 +780,86 @@
                     <div class="row" style="margin-top: 30px">
                         <div class="col-md-6">
                             <div class="">
-                                <a style="width: 100%" class="genric-btn primary-border e-large">Оксфорд</a>
+                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Оксфорд</a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="">
-                                <a style="width: 100%" class="genric-btn primary-border e-large">Экокожа</a>
+                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Экокожа</a>
                             </div>
                         </div>
                     </div>
 
+                    <h5 class="title text-uppercase" style="text-align: center;margin: 30px;">Выберите цвет</h5>
+
+                    <ul class="thumbnails image_picker_selector">
+                        <li>
+                            <div class="thumbnail selected"><img class="image_picker_image" src="img/materials/leather-gold.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-gray.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-gray2.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                    </ul>
+
+
+                    <div class="mt-10">
+                        <h6 style="text-align: center; margin-bottom: 15px">УКАЖИТЕ КОЛИЧЕСТВО МЕШКОВ</h6>
+                        <div class="flex-m flex-w p-t-10" style="padding-top: 5px!important">
+                            <div class="flex-w bo5 of-hidden m-b-10">
+                                <button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+								</button>
+
+                                <input class="size8 m-text18 t-center num-product" type="number" name="num-product" value="1" style="width: 74px">
+
+                                <button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+								</button>
+                            </div>
+                        </div>
+                    </div>
                     <p style="text-align: center; margin-top: 30px;">Каталог доступных цветов утоячняется у оператора после отправки заявки на аренду.<br>Наш оператор свяжется с Вами в ближайшее время.</p>
                     <h4 class="title text-uppercase" style="padding-left: 20px; margin-top: 20px; margin-bottom: 10px; text-align: center">ИТОГО: 35 BYN</h4>
                 </div>
