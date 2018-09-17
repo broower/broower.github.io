@@ -135,7 +135,7 @@
                                     </ul>
                                     <div class="div-order">
 
-                                        <a href="#" class="genric-btn info circle arrow width100">
+                                        <a href="#" class="genric-btn info circle arrow width100" data-toggle="modal" data-target="#makeOrder">
                                             <div class="div-order">Заказать</div><span class="lnr lnr-arrow-right"></span></a>
                                     </div>
                                 </div>
@@ -154,7 +154,7 @@
                                     </ul>
                                     <div class="div-order">
                                         <a href="#" class="genric-btn info circle arrow width100">
-                                            <div class="div-order">Заказать</div><span class="lnr lnr-arrow-right"></span></a>
+                                            <div class="div-order" data-toggle="modal" data-target="#makeOrderCase">Заказать</div><span class="lnr lnr-arrow-right"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -172,7 +172,7 @@
                                     <div class="div-order">
 
                                         <a href="#" class="genric-btn info circle arrow width100">
-                                            <div class="div-order">Заказать</div><span class="lnr lnr-arrow-right"></span></a>
+                                            <div class="div-order" data-toggle="modal" data-target="#makeOrderFiller">Заказать</div><span class="lnr lnr-arrow-right"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -822,6 +822,214 @@
 
                     <div class="mt-10">
                         <h6 style="text-align: center; margin-bottom: 15px">УКАЖИТЕ КОЛИЧЕСТВО МЕШКОВ</h6>
+                        <div class="flex-m flex-w p-t-10" style="padding-top: 5px!important">
+                            <div class="flex-w bo5 of-hidden m-b-10">
+                                <button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+								</button>
+
+                                <input class="size8 m-text18 t-center num-product" type="number" name="num-product" value="1" style="width: 74px">
+
+                                <button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+								</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="text-align: center; margin-top: 30px;">Каталог доступных цветов утоячняется у оператора после отправки заявки на аренду.<br>Наш оператор свяжется с Вами в ближайшее время.</p>
+                    <h4 class="title text-uppercase" style="padding-left: 20px; margin-top: 20px; margin-bottom: 10px; text-align: center">ИТОГО: 35 BYN</h4>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="genric-btn default circle close" data-dismiss="modal">Закрыть</a>
+                    <a href="#" class="genric-btn info circle arrow">Отправить<span class="lnr lnr-arrow-right"></span></a> </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal "заказать чехол" makeOrderCase -->
+    <div id="makeOrderCase" class="modal fade" role="dialog" style="z-index: 999999">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="title text-uppercase">Оформить заказ</h6>
+                </div>
+                <div class="modal-body">
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите имя" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите имя'" required="" class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите мобильный телефон" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите мобильный телефон'" required="" class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите e-mail'" required="" class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите адрес доставки" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите адрес доставки'" required="" class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите почтовый индекс" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите почтовый индекс'" required="" class="single-input">
+                    </div>
+
+                    <div class="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group-icon mt-10">
+                                    <div class="icon"><i class="fa fa-sort" aria-hidden="true"></i></div>
+                                    <div class="form-select">
+                                        <select style="display: none;">
+                                            	<option value="1">Стандарт - XL [90x120см]</option>
+												<option value="1">Маленький - L [90x110см]</option>
+												<option value="1">Большой - XXL [90x135см]</option>
+											</select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group-icon mt-10">
+                                    <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                    <div class="form-select">
+                                        <select style="display: none;">
+												<option value="1">Оксфорд</option>
+												<option value="1">Экокожа</option>
+											</select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="title text-uppercase" style="margin-top: 30px; text-align: center">Форма мешка</h5>
+
+                    <div class="row" style="margin-top: 30px">
+                        <div class="col-md-4">
+                            <div class="">
+                                <a href="#" class="genric-btn info-border radius" style="width: 100%">Груша</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="">
+                                <a href="#" class="genric-btn info-border radius" style="width: 100%">Шар</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="">
+                                <a href="#" class="genric-btn info-border radius" style="width: 100%">Треугольник</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="title text-uppercase" style="text-align: center;margin: 30px;">Выберите цвет</h5>
+
+                    <ul class="thumbnails image_picker_selector">
+                        <li>
+                            <div class="thumbnail selected"><img class="image_picker_image" src="img/materials/leather-gold.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-gray.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-gray2.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="thumbnail"><img class="image_picker_image" src="img/materials/leather-red.jpg"></div>
+                        </li>
+                    </ul>
+
+
+                    <div class="mt-10">
+                        <h6 style="text-align: center; margin-bottom: 15px">УКАЖИТЕ КОЛИЧЕСТВО ЧЕХЛОВ</h6>
+                        <div class="flex-m flex-w p-t-10" style="padding-top: 5px!important">
+                            <div class="flex-w bo5 of-hidden m-b-10">
+                                <button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+								</button>
+
+                                <input class="size8 m-text18 t-center num-product" type="number" name="num-product" value="1" style="width: 74px">
+
+                                <button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+								</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="text-align: center; margin-top: 30px;">Каталог доступных цветов утоячняется у оператора после отправки заявки на аренду.<br>Наш оператор свяжется с Вами в ближайшее время.</p>
+                    <h4 class="title text-uppercase" style="padding-left: 20px; margin-top: 20px; margin-bottom: 10px; text-align: center">ИТОГО: 35 BYN</h4>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="genric-btn default circle close" data-dismiss="modal">Закрыть</a>
+                    <a href="#" class="genric-btn info circle arrow">Отправить<span class="lnr lnr-arrow-right"></span></a> </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal "заказать чехол" makeOrderFiller -->
+    <div id="makeOrderFiller" class="modal fade" role="dialog" style="z-index: 999999">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="title text-uppercase">Оформить заказ</h6>
+                </div>
+                <div class="modal-body">
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите имя" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите имя'" required="" class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите мобильный телефон" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите мобильный телефон'" required="" class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите e-mail'" required="" class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите адрес доставки" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите адрес доставки'" required="" class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="Введите почтовый индекс" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите почтовый индекс'" required="" class="single-input">
+                    </div>
+
+                    <div class="mt-10">
+                        <h6 style="text-align: center; margin-bottom: 15px">УКАЖИТЕ КОЛИЧЕСТВО МЕШКОВ НАПОЛНИТЕЛЯ (1 МЕШОК = 100 ЛИТРОВ)</h6>
                         <div class="flex-m flex-w p-t-10" style="padding-top: 5px!important">
                             <div class="flex-w bo5 of-hidden m-b-10">
                                 <button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
