@@ -1,0 +1,120 @@
+#social-platforms {
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+.btn:hover {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
+}
+
+.btn:focus {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn > span,
+.btn-icon > i {
+    float: left;
+    padding: 13px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    line-height: 1em
+}
+
+.btn > span {
+    padding: 14px 18px 16px;
+    white-space: nowrap;
+    color: #FFF;
+    background: #b8b8b8
+}
+
+.btn:focus > span {
+    background: #9a9a9a
+}
+
+.btn-icon > i {
+    border-radius: 5px 0 0 5px;
+    position: relative;
+    width: 13px;
+    text-align: center;
+    font-size: 1.25em;
+    color: #fff;
+    background: #212121
+}
+
+.btn-icon > i:after {
+    content: "";
+    border: 8px solid;
+    border-color: transparent transparent transparent #222;
+    position: absolute;
+    top: 13px;
+    right: -15px
+}
+
+.btn-icon:hover > i,
+.btn-icon:focus > i {
+    color: #FFF
+}
+
+.btn-icon > span {
+    border-radius: 0 5px 5px 0
+}
+
+/*Facebook*/
+
+.btn-facebook:hover > i,
+.btn-facebook:focus > i {
+    color: #3b5998
+}
+
+.btn-facebook > span {
+    background: #3b5998
+}
+
+/*Twitter*/
+
+.btn-twitter:hover > i,
+.btn-twitter:focus > i {
+    color: #55acee
+}
+
+.btn-twitter > span {
+    background: #55acee
+}
+
+/*Google*/
+
+.btn-youtube:hover > i,
+.btn-youtube:focus > i {
+    color: #38a4ff
+}
+
+.btn-youtube > span {
+    background: #38a4ff
+}
+
+/*Pinterest*/
+
+.btn-vk:hover > i,
+.btn-vk:focus > i {
+    color: #38a4ff
+}
+
+.btn-vk > span {
+    background: #38a4ff
+}
+
+/*LinkedIn*/
+
+.btn-instagram:hover > i,
+.btn-instagram:focus > i {
+    color: #38a4ff
+}
+
+.btn-instagram > span {
+    background: #38a4ff
+}
