@@ -531,13 +531,13 @@
         </header>
     </div>
 
-    <a href="#" id="popup__toggle" onclick="return false;" style="z-index: 999999">
+    <a href="#" id="popup__toggle" onclick="return false;" style="z-index: 999990">
         <div style="transform-origin: center;">
             <h3 class="genric-btn primary e-large radius" data-toggle="modal" data-target="#callOrder">Заказать звонок</h3>
         </div>
     </a>
 
-    <a href="#0" class="cd-top js-cd-top" style="z-index: 999998">Top</a>
+    <a href="#0" class="cd-top js-cd-top" style="z-index: 999990">Top</a>
 
     <script src="js/scroll_to_top.js"></script>
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
@@ -551,7 +551,7 @@
     <script src="js/main.js"></script>
 
     <!-- Modal "Закзать звонок" callOrder -->
-    <div id="callOrder" class="modal fade" role="dialog">
+    <div id="callOrder" class="modal fade" role="dialog" style="z-index: 999999">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -577,7 +577,7 @@
     </div>
 
     <!-- Modal "Аренда" lease -->
-    <div id="lease" class="modal fade" role="dialog">
+    <div id="lease" class="modal fade" role="dialog" style="z-index: 999999">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -600,22 +600,27 @@
                         <input type="text" name="first_name" placeholder="Введите адрес доставки" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите адрес доставки'" required="" class="single-input">
                     </div>
 
-                    <div class="mt-10">
-                        <div class="col-lg-4 col-md-6 mt-sm-30">
-                            <div class="single-element-widget">
-                                <div class="switch-wrap d-flex justify-content-between">
-                                    <p style="padding-left: 5px">Комплектация со внешними чехлами</p>
-                                    <div class="primary-switch">
-                                        <input type="checkbox" id="primary-switch" checked="">
-                                        <label for="primary-switch"></label>
+                    <div class="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group-icon mt-10">
+                                    <div class="icon"><i class="fa fa-database" aria-hidden="true"></i></div>
+                                    <div class="form-select">
+                                        <select style="display: none;">
+                                            	<option value="1">Без внешнего чехла</option>
+												<option value="1">Внутренний и внешний чехол</option>
+											</select>
                                     </div>
                                 </div>
-
-                                <div class="switch-wrap d-flex justify-content-between">
-                                    <p style="padding-left: 5px">Комплектация с пледами [3 BYN/сутки]</p>
-                                    <div class="primary-switch">
-                                        <input type="checkbox" id="default-switch">
-                                        <label for="default-switch"></label>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group-icon mt-10">
+                                    <div class="icon"><i class="fa fa-bed" aria-hidden="true"></i></div>
+                                    <div class="form-select">
+                                        <select style="display: none;">
+												<option value="1">Комплектация без пледов</option>
+												<option value="1">Комплектация с пледами [3 BYN/сутки]</option>
+											</select>
                                     </div>
                                 </div>
                             </div>
@@ -676,7 +681,7 @@
     </div>
 
     <!-- Modal "оформить заказ" makeOrder -->
-    <div id="makeOrder" class="modal fade" role="dialog">
+    <div id="makeOrder" class="modal fade" role="dialog" style="z-index: 999999">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -701,96 +706,62 @@
                         <input type="text" name="first_name" placeholder="Введите почтовый индекс" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите почтовый индекс'" required="" class="single-input">
                     </div>
 
-                    <div class="mt-10">
-                        <div class="input-group-icon mt-10">
-                            <div class="icon"><i class="fa fa-sort" aria-hidden="true"></i></div>
-                            <div class="form-select">
-                                <select style="display: none;">
-												<option value="1">Размер мешка</option>
+                    <div class="">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="input-group-icon mt-10">
+                                    <div class="icon"><i class="fa fa-sort" aria-hidden="true"></i></div>
+                                    <div class="form-select">
+                                        <select style="display: none;">
+                                            	<option value="1">Стандарт - XL [90x120см]</option>
 												<option value="1">Маленький - L [90x110см]</option>
-												<option value="1">Стандарт - XL [90x120см]</option>
 												<option value="1">Большой - XXL [90x135см]</option>
 											</select>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-10">
-                        <div class="input-group-icon mt-10">
-                            <div class="icon"><i class="fa fa-sort" aria-hidden="true"></i></div>
-                            <div class="form-select">
-                                <select style="display: none;">
-												<option value="1">Комплектация</option>
+                            <div class="col-md-4">
+                                <div class="input-group-icon mt-10">
+                                    <div class="icon"><i class="fa fa-database" aria-hidden="true"></i></div>
+                                    <div class="form-select">
+                                        <select style="display: none;">
 												<option value="1">Внутренний и внешний чехол</option>
 												<option value="1">Без внешнего чехла</option>
 											</select>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-10">
-                        <div class="input-group-icon mt-10">
-                            <div class="icon"><i class="fa fa-sort" aria-hidden="true"></i></div>
-                            <div class="form-select">
-                                <select style="display: none;">
-												<option value="1">Материал</option>
+                            <div class="col-md-4">
+                                <div class="input-group-icon mt-10">
+                                    <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                    <div class="form-select">
+                                        <select style="display: none;">
 												<option value="1">Оксфорд</option>
 												<option value="1">Экокожа</option>
 											</select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row" style="margin-top: 30px">
-                        <div class="col-md-3">
-                            <div class="">
-                                <h5 class="title text-uppercase" style="margin-top: 30px; text-align: center">Форма мешка: </h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="">
-                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Груша</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="">
-                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Шар</a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="">
-                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Треугольник</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h5 class="title text-uppercase" style="margin-top: 30px; text-align: center">Комплектация</h5>
+                    <h5 class="title text-uppercase" style="margin-top: 30px; text-align: center">Форма мешка</h5>
 
                     <div class="row" style="margin-top: 30px">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="">
-                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Со внешних чехлом</a>
+                                <a href="#" class="genric-btn info-border radius" style="width: 100%">Груша</a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="">
-                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Без внешнего чехла</a>
+                                <a href="#" class="genric-btn info-border radius" style="width: 100%">Шар</a>
                             </div>
                         </div>
-                    </div>
 
-                    <h5 class="title text-uppercase" style="margin-top: 30px; text-align: center">Материал</h5>
-
-                    <div class="row" style="margin-top: 30px">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="">
-                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Оксфорд</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="">
-                                <a href="#" class="genric-btn info-border circle" style="width: 100%">Экокожа</a>
+                                <a href="#" class="genric-btn info-border radius" style="width: 100%">Треугольник</a>
                             </div>
                         </div>
                     </div>
