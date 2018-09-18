@@ -125,3 +125,59 @@ ul.tags li a:hover {
     margin-top: 30px;
     margin-bottom: 50px;
 }
+
+
+/* ##### 07 : ITEM CARD  ##### 49e3ce */
+
+.image_item_card {
+    margin-top: 0px!important;
+    padding: 0px!important;
+}
+
+.image_item_card_image {
+    margin: 15px!important;
+}
+
+.item_card {
+    cursor: pointer;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    padding: 0px;
+    position: relative;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 50px rgba(0, 0, 0, .2)
+}
+
+.item_card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.item_card .plan_title {
+    font-size: 30px;
+}
+
+.item_card .plan_price {
+    text-align: center;
+    background-color: #38a4ff;
+    padding: 5px 20px;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.item_card ul {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
