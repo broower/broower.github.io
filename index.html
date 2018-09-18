@@ -61,7 +61,7 @@
                                     <li class="nav-item active"><a class="nav-link" style="padding-left: 0px!important; padding-right: 0px!important; margin-left: 33px!important; margin-right: 0px!important" href="#catalogue">Каталог</a></li>
                                     <li class="nav-item active"><a class="nav-link" style="padding-left: 0px!important; padding-right: 0px!important; margin-left: 33px!important; margin-right: 0px!important" href="#checkout">Оформить заказ</a></li>
                                     <li class="nav-item active"><a class="nav-link" style="padding-left: 0px!important; padding-right: 0px!important; margin-left: 33px!important; margin-right: 0px!important" href="#pay_and_delivery ">Оплата и доставка</a></li>
-                                    <li class="nav-item active"><a class="nav-link" style="padding-left: 0px!important; padding-right: 0px!important; margin-left: 33px!important; margin-right: 0px!important" href="index.html">Аренда</a></li>
+                                    <li class="nav-item active"><a class="nav-link" style="padding-left: 0px!important; padding-right: 0px!important; margin-left: 33px!important; margin-right: 0px!important" href="#lease">Аренда</a></li>
                                     <li class="nav-item active"><a class="nav-link" style="padding-left: 0px!important; padding-right: 0px!important; margin-left: 33px!important; margin-right: 0px!important" href="#about_us">О компании</a></li>
                                     <li class="nav-item active"><a class="nav-link" style="padding-left: 0px!important; padding-right: 0px!important; margin-left: 33px!important; margin-right: 0px!important" href="#contacts">Контакты</a></li>
 
@@ -122,11 +122,11 @@
             <div class="container">
                 <div class="section-top-border">
                     <div class="row">
-                        <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+                        <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-toggle="modal" data-target="#makeOrder">
                             <div class="pricing_plan">
                                 <h1 class="genric-btn price">от 65 РУБЛЕЙ</h1>
                                 <div class="padding-30">
-                                    <h3 style="text-align: center">МЕШКИ</h3>
+                                    <h4 class="text-uppercase" style="text-align: center">МЕШКИ</h4>
                                     <ul class="unordered-list min-height-120">
                                         <li>Вес: 3-6 кг</li>
                                         <li>Размеры: L, XL, XXL</li>
@@ -135,44 +135,43 @@
                                     </ul>
                                     <div class="div-order">
 
-                                        <a href="#" class="genric-btn info circle arrow width100" data-toggle="modal" data-target="#makeOrder">
+                                        <a role="button" class="genric-btn info circle arrow width100">
                                             <div class="div-order">Заказать</div><span class="lnr lnr-arrow-right"></span></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".1s">
+                        <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".1s" data-toggle="modal" data-target="#makeOrderCase">
                             <div class="pricing_plan">
                                 <h1 class="genric-btn price">от 30 РУБЛЕЙ</h1>
                                 <div class="padding-30">
-                                    <h3 style="text-align: center">ЧЕХЛЫ</h3>
+                                    <h4 class="text-uppercase" style="text-align: center">ЧЕХЛЫ</h4>
                                     <ul class="unordered-list min-height-120">
                                         <li>Размеры: L, XL, XXL</li>
                                         <li>Материал: оксфорд, экокожа</li>
                                         <li>Комплектация: внешний чехол</li>
                                     </ul>
                                     <div class="div-order">
-                                        <a href="#" class="genric-btn info circle arrow width100">
-                                            <div class="div-order" data-toggle="modal" data-target="#makeOrderCase">Заказать</div><span class="lnr lnr-arrow-right"></span></a>
+                                        <a role="button" class="genric-btn info circle arrow width100">
+                                            <div class="div-order">Заказать</div><span class="lnr lnr-arrow-right"></span></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".2s" data-toggle="modal" data-target="#makeOrderFiller">
                             <div class="pricing_plan">
                                 <h1 class="genric-btn price">от 10 РУБЛЕЙ</h1>
                                 <div class="padding-30">
-                                    <h3 style="text-align: center">НАПОЛНИТЕЛЬ</h3>
+                                    <h4 class="text-uppercase" style="text-align: center">НАПОЛНИТЕЛЬ</h4>
                                     <ul class="unordered-list min-height-120">
                                         <li>Вес: 0.8-0.9 кг</li>
                                         <li>Материал: полистирол</li>
                                     </ul>
                                     <div class="div-order">
-
-                                        <a href="#" class="genric-btn info circle arrow width100">
-                                            <div class="div-order" data-toggle="modal" data-target="#makeOrderFiller">Заказать</div><span class="lnr lnr-arrow-right"></span></a>
+                                        <a role="button" class="genric-btn info circle arrow width100">
+                                            <div class="div-order">Заказать</div><span class="lnr lnr-arrow-right"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +187,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="section-title text-center">
-                            <h3>СКИДКИ И АКЦИИ</h3>
+                            <h4 class="text-uppercase" style="text-align: center">СКИДКИ И АКЦИИ</h4>
                             <span class="text-uppercase">Получай скидки от нас и наших партнеров</span>
                         </div>
                     </div>
@@ -197,7 +196,7 @@
                     <div class="item">
                         <div class="thumb" style="background: url(img/taboo.jpg);"></div>
                         <div class="caption text-center">
-                            <h6 class="text-uppercase">БЕСПЛАТНЫЙ КАЛЬЯН</h6>
+                            <h5 class="text-uppercase">БЕСПЛАТНЫЙ КАЛЬЯН</h5>
                             <p>При оформлении заказа от 70 рублей каждый клиент получает бесплатный покур ПРЕМИУМ кальяна в баре TABOO на Кирова 15.<br>Время работы заведения: пн-чт: 19:00 - 04:00, пт-сб: 19:00 - 07:00</p>
                         </div>
                     </div>
@@ -286,7 +285,7 @@
             </div>
         </section>
 
-        <div class="white-bg section-top-border" id="catalogue">
+        <div class="white-bg section-top-border">
             <div class="container">
 
                 <div id="social-platforms">
@@ -295,7 +294,7 @@
                     <a class="btn btn-icon btn-vk" href="https://vk.com/broower" style="margin: 8px; padding: 0; border: 0; box-sizing: content-box"><i class="fa fa-vk"></i><span>Вконтакте</span></a>
                 </div>
 
-                <div class="">
+                <div class="" id="catalogue">
                     <div class="row gallery-item" style="margin-top: 50px">
                         <div class="col-md-6">
                             <a href="img/gallary/ex7.png" class="img-pop-up">
@@ -362,7 +361,7 @@
         <div class="white-bg" id="pay_and_delivery">
             <div class="container">
                 <div class="section-top-border">
-                    <h3 class="mb-30" style="text-align: center">Оплата и доставка</h3>
+                    <h5 class="text-uppercase mb-20" style="text-align: center">Оплата и доставка</h5>
                     <div class="row">
                         <div class="col-md-3">
                             <img src="img/delivery.png" alt="" class="img-fluid">
@@ -381,7 +380,8 @@
             <div class="container">
                 <div id="about_us">
                     <div class="">
-                        <h3 class="mb-30" style="text-align: center!important">О компании</h3>
+                        <h5 class="text-uppercase mb-20" style="text-align: center">О компании</h5>
+
                         <div class="row">
                             <div class="col-lg-12">
                                 <p>
@@ -394,19 +394,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="single-defination">
-                                <h4 class="mb-20">Аренда</h4>
+                                <h6 class="text-uppercase mb-20" style="text-align: center">Аренда</h6>
                                 <p>Рады предложить Вам уникальную услугу по аренде бескаркасной мебели на праздники, корпоративы и не только. Аренда осуществляется в любом количестве, любой формы и расцветки.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="single-defination">
-                                <h4 class="mb-20">Продажа</h4>
+                                <h6 class="text-uppercase mb-20" style="text-align: center">Продажа</h6>
                                 <p>Мы предлагаем совершенно новый и необычный способ достижения максимального уровня комфорта вместе с нашими кресло-мешками. Мы готовы предоставить Вам широкий ассортимент товара и услуг.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="single-defination">
-                                <h4 class="mb-20">Качество</h4>
+                                <h6 class="text-uppercase mb-20" style="text-align: center">Качество</h6>
                                 <p>Приоритетом работы нашей компании является принцип индвивидуального подхода к каждому клиенту. Мы готовы Вам помочь в разработке индивидуального дизайна бескаркасной мебели быстрока, качественно и профессионально.</p>
                             </div>
                         </div>
@@ -415,12 +415,12 @@
             </div>
         </div>
 
-        <section class="story-area-2" id="checkout">
+        <section class="story-area-2" id="lease">
             <div class="container">
                 <div class="row align-items-center">
                     <div style="width: 100%">
                         <div class="story-box">
-                            <h6 class="text-uppercase" style="text-align: center">Аренда</h6>
+                            <h5 class="text-uppercase" style="text-align: center">Аренда</h5>
                             <p style="text-align: center">Чем аренда кресел лучше покупки?</p>
                             <ul class="unordered-list">
                                 <li style="text-align: left">Вам не нужно искать определенную сумму денег для покупки большого количества кресло-мешков для проведения Вашего мероприятия.</li>
@@ -443,7 +443,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="section-title text-center">
-                            <h3>Подпишитесь на рассылку</h3>
+                            <h4 class="text-uppercase" style="text-align: center">Подпишитесь на рассылку</h4>
                             <span class="text-uppercase">Узнавай первым о наших скидках, розыгрышах и акциях</span>
                         </div>
                     </div>
@@ -583,7 +583,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h6 class="title text-uppercase">Заказать аренду</h6>
+                    <h5 class="title text-uppercase">Заказать аренду</h5>
                 </div>
                 <div class="modal-body">
                     <h5 class="title text-uppercase" style="text-align: center">Стоимость аренды одного кресло-мешка - 5 BYN/сутки</h5>
@@ -854,7 +854,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h6 class="title text-uppercase">Оформить заказ</h6>
+                    <h5 class="title text-uppercase">Оформить заказ</h5>
                 </div>
                 <div class="modal-body">
                     <div class="mt-10">

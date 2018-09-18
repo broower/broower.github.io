@@ -83,6 +83,8 @@ ul.tags li a:hover {
 /* ##### 07 : PRICING PLANS STYLES  ##### 49e3ce */
 
 .pricing_plan {
+    cursor: pointer;
+    border-radius: 15px;
     margin-bottom: 30px;
     padding: 0px;
     position: relative;
@@ -104,7 +106,6 @@ ul.tags li a:hover {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 0px solid transparent;
-    border-top: 10px solid #38a4ff;
 }
 
 .pricing_plan .plan_title {
