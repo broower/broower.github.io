@@ -2223,7 +2223,7 @@ body:after,
 .active-banner-slider .item .content {
     position: relative;
     z-index: 3;
-    width: 60%;
+    width: 100%;
 }
 
 @media) {
