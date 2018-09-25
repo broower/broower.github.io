@@ -1000,25 +1000,25 @@ h6 {
 }
 
 .genric-btn.info {
-    color: #fff!important;
+    color: #fff !important;
     background: #38a4ff;
     border: 1px solid transparent;
 }
 
 .genric-btn.info:hover {
-    color: #38a4ff!important;
+    color: #38a4ff !important;
     border: 1px solid #38a4ff;
     background: #fff;
 }
 
 .genric-btn.info-border {
-    color: #38a4ff!important;
+    color: #38a4ff !important;
     border: 1px solid #38a4ff;
     background: #fff;
 }
 
 .genric-btn.info-border:hover {
-    color: #fff!important;
+    color: #fff !important;
     background: #38a4ff;
     border: 1px solid transparent;
 }
@@ -2954,8 +2954,11 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-.header_area{
+.header_area {
+    height: 85px !important;
+    max-height: 85px !important;
     position: fixed;
     z-index: 99999;
     width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
