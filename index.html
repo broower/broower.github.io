@@ -691,6 +691,7 @@
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="CallOrder/handler.js"></script>
 
     <!-- Modal "Закзать звонок" callOrder -->
     <div id="callOrder" class="modal fade" role="dialog" style="z-index: 999999">
@@ -703,16 +704,16 @@
                 </div>
                 <div class="modal-body">
                     <div class="mt-10">
-                        <input type="text" name="first_name" placeholder="Имя" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Имя'" required="" class="single-input">
+                        <input type="text" name="first_name" placeholder="Имя" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Имя'" required="" class="single-input" id="name-order">
                     </div>
                     <div class="mt-10">
-                        <input type="text" name="first_name" placeholder="Мобильный телефон" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Мобильный телефон'" required="" class="single-input">
+                        <input type="text" name="first_name" placeholder="Мобильный телефон" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Мобильный телефон'" required="" class="single-input" id="phone-order">
                     </div>
                     <p style="text-align: center; margin-top: 30px;">Наш оператор свяжется с Вами в ближайшее время.</p>
                 </div>
                 <div class="modal-footer">
-                    <a href="#" class="genric-btn default circle close" data-dismiss="modal">Закрыть</a>
-                    <a href="#" class="genric-btn info circle arrow">Отправить<span class="lnr lnr-arrow-right"></span></a>
+                    <a href="#" class="genric-btn default circle close" id="close-btn-modal" data-dismiss="modal">Закрыть</a>
+                    <a href="#" class="genric-btn info circle arrow" id="send-email">Отправить<span class="lnr lnr-arrow-right"></span></a>
                 </div>
             </div>
 
